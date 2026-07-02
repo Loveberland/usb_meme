@@ -1,63 +1,48 @@
-# 🎵 usb_meme
+# USB Meme - Rick Roll Prank Program
 
-> *"Just kidding :) It's just a prank from loveberland"*
+## What This Program Does
 
-A harmless USB prank that with an endless barrage. Plug in, run, and watch the chaos unfold. 😈
-
-## ⚙️ How it works
-
-1. You compile `main.c` → `main.exe`
-2. Drop `main.exe` + `setup.bat` onto a USB drive
-3. And secretly ran it on a friend's computer while they weren't around.
-4. `setup.bat` silently copies the executable to `%TEMP%`, launches it, then **self-destructs** (deletes itself + the cleanup script once the prank exe exits)
-5. Victim closes the main window → everything cleans up automatically, no evidence
-
-> **No registry edits. No persistence. No actual harm. Just pure, beautiful chaos.**
-
----
-
-## 🪟 Windows (Supported ✅)
-
-### Build
-
-You'll need **GCC** (MinGW / MSYS2 works great):
-
+This program is a harmless prank tool that creates a new terminal window and displays a classic Rick Roll in ASCII art form using the command:
 ```bash
-gcc main.c -o main.exe
+curl -L ascii.live/can-you-hear-me
 ```
 
-### Prepare the USB
+When executed, your friend will see a fun ASCII animation with the famous Rick Astley video playing in their terminal. It's a playful surprise designed to get a laugh!
 
-```
-usb_drive/
-├── main.exe      ← compiled binary
-└── setup.bat     ← the launcher (auto self-destructs after prank ends)
-```
+## Important Disclaimer
 
-### Deploy the Prank
+**Please use this responsibly!** This program is intended as a harmless prank for friends who would appreciate the humor. 
 
-1. Plug the USB into target machine
-2. Run `setup.bat`
-3. Walk away casually 😎
-4. Try not to laugh
+- Use on friends' machines (with permission or as a consensual prank)
+- Use in shared lab/office environments where pranks are welcomed
+- Do NOT use on systems you don't have permission to access
+- Do NOT use in professional settings without consent
+- Do NOT use on public/shared systems without proper authorization
+
+**Ethical use only!**
+
+## Objective
+
+Create a quick, fun way to surprise friends with a Rick Roll prank. Perfect for:
+- Lab partners at university
+- Coworkers who appreciate pranks
+- Friends sharing a computer
+- Gaming sessions
+
+## Prerequisites
+
+### Common Requirements
+- Internet connection (to stream the ASCII animation)
+- A terminal/command prompt
+- `curl` installed on your system
+
+### Linux
+- Bash or compatible shell
+- `gnome-terminal`, `xterm`, `konsole`, or similar terminal emulator
+
+### Windows
+- PowerShell or Command Prompt
+- OR Git Bash / WSL (Windows Subsystem for Linux)
+- `curl` (built-in on Windows 10/11 or installable via WSL)
 
 ---
-
-## 🐧 Linux *(Coming Soon™)*
-
-The Linux version is **in the works**. 
-
----
-
-## 🛠️ Contributing
-
-Got a prank idea? Open a PR.
-
-- More ASCII art sources?  ← yes please
-- macOS support (`.command` script)?  ← let's go
-- Linux shell script?  ← coming soon, help welcome
-- More chaos?  ← always
-
----
-
-*Made with 💀 and poor life decisions by [loveberland](https://github.com/Loveberland)*
